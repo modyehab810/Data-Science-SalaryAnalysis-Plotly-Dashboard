@@ -2,12 +2,10 @@
 import pandas as pd
 import numpy as np
 import plotly.express as px
-import plotly.graph_objects as go
-from plotly.offline import iplot
 
 # Dash Components
 import dash
-from dash import Dash, html, dcc, Input, Output, dash_table
+from dash import Dash, html, dcc, Input, Output
 import dash_bootstrap_components as dbc
 
 # -------------- Load The Data ------------------ #
@@ -46,8 +44,6 @@ jobs_title.insert(0,"All")
 app = Dash(__name__, external_stylesheets=[dbc.themes.VAPOR])
 # To render on web app
 server = app.server
-
-
 
 # Sidebar Style
 sidebar_style = {
