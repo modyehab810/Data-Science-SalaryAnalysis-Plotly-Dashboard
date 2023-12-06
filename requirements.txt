@@ -4,4 +4,4 @@ pandas
 plotly
 dash_bootstrap_components
 gunicorn
-python_version==3.10
+numexpr==2.7.3;python_version=="3.10"
